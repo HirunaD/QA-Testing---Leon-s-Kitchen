@@ -1,0 +1,241 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-06-10T08:32:25.927Z",
+    "end": "2024-06-10T08:32:40.401Z",
+    "duration": 14474,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "854e391a-1848-498d-a536-293b63fbfaef",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [
+        {
+          "title": "\"after all\" hook in \"{root}\"",
+          "fullTitle": "\"after all\" hook in \"{root}\"",
+          "timedOut": false,
+          "duration": 66,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "await workbook.xlsx.writeFile('Test_Results.xlsx');\nconsole.log('Excel report generated successfully.');",
+          "err": {},
+          "uuid": "7721e16c-d5de-4265-ab50-62eaf2c2d783",
+          "parentUUID": "854e391a-1848-498d-a536-293b63fbfaef",
+          "isHook": true,
+          "skipped": false
+        }
+      ],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dfc82b37-3ab1-4b4b-9bcc-18957ec9cde2",
+          "title": "Login (Positive Scenario)",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\loginRest.js",
+          "file": "\\tests\\unitTesting\\loginRest.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Login (Positive Scenario)\"",
+              "fullTitle": "Login (Positive Scenario) \"before each\" hook in \"Login (Positive Scenario)\"",
+              "timedOut": false,
+              "duration": 1509,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();\nstartTime = new Date().getTime();",
+              "err": {},
+              "uuid": "104c34d6-aa20-432c-81d8-4e357200bed5",
+              "parentUUID": "dfc82b37-3ab1-4b4b-9bcc-18957ec9cde2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Login (Positive Scenario)\"",
+              "fullTitle": "Login (Positive Scenario) \"after each\" hook in \"Login (Positive Scenario)\"",
+              "timedOut": false,
+              "duration": 141,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "63a5b855-830f-424d-bdac-94bc6007cb8f",
+              "parentUUID": "dfc82b37-3ab1-4b4b-9bcc-18957ec9cde2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Login (Positive Scenario)",
+              "fullTitle": "Login (Positive Scenario) Login (Positive Scenario)",
+              "timedOut": false,
+              "duration": 4480,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    await driver.get(\"http://localhost:3000/loginorreg\");\n    await driver.manage().window().setRect({ width: 1552, height: 832 });\n    await driver.findElement(By.linkText(\"Login\")).click();\n    await driver.findElement(By.name(\"email\")).click();\n    await driver.findElement(By.name(\"email\")).sendKeys(\"desilvahiruna72@gmail.com\");\n    await driver.findElement(By.name(\"password\")).click();\n    await driver.findElement(By.name(\"password\")).sendKeys(\"Rsm@1234\");\n    await driver.findElement(By.css(\".sc-qZrbh\")).click();\n    const duration = new Date().getTime() - startTime;\n    addTestResult('Login (Positive Scenario)', 'Passed', duration, '');\n} catch (error) {\n    const duration = new Date().getTime() - startTime;\n    addTestResult('Login (Positive Scenario)', 'Failed', duration, error.message);\n    throw error;\n}",
+              "err": {},
+              "uuid": "519a42be-9d68-43ea-9cd1-43e37c388cfb",
+              "parentUUID": "dfc82b37-3ab1-4b4b-9bcc-18957ec9cde2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "519a42be-9d68-43ea-9cd1-43e37c388cfb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4480,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "01de7a14-abfb-454c-a2ca-6307fa94c62c",
+          "title": "Login (Negative Scenario)",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\loginRest.js",
+          "file": "\\tests\\unitTesting\\loginRest.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Login (Negative Scenario)\"",
+              "fullTitle": "Login (Negative Scenario) \"before each\" hook in \"Login (Negative Scenario)\"",
+              "timedOut": false,
+              "duration": 1504,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();\nstartTime = new Date().getTime();",
+              "err": {},
+              "uuid": "4931b8b4-64e4-4bc9-872a-5efb2fac8e7f",
+              "parentUUID": "01de7a14-abfb-454c-a2ca-6307fa94c62c",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Login (Negative Scenario)\"",
+              "fullTitle": "Login (Negative Scenario) \"after each\" hook in \"Login (Negative Scenario)\"",
+              "timedOut": false,
+              "duration": 155,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "e4343d56-e165-4634-9c0f-480690f3c7da",
+              "parentUUID": "01de7a14-abfb-454c-a2ca-6307fa94c62c",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Login (Negative Scenario)",
+              "fullTitle": "Login (Negative Scenario) Login (Negative Scenario)",
+              "timedOut": false,
+              "duration": 6594,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    await driver.get(\"http://localhost:3000/loginorreg\");\n    await driver.manage().window().setRect({ width: 1552, height: 832 });\n    await driver.findElement(By.linkText(\"Login\")).click();\n    await driver.findElement(By.name(\"email\")).click();\n    await driver.findElement(By.name(\"email\")).sendKeys(\"desilvahiruna72@gmail.com\");\n    await driver.findElement(By.name(\"password\")).click();\n    await driver.findElement(By.name(\"password\")).sendKeys(\"rsm@1234\");\n    await driver.findElement(By.css(\".sc-qZrbh\")).click();\n    const element = await driver.findElement(By.css(\".sc-qZrbh\"));\n    await driver.actions({ bridge: true }).moveToElement(element).perform();\n    const duration = new Date().getTime() - startTime;\n    addTestResult('Login (Negative Scenario)', 'Passed', duration, '');\n} catch (error) {\n    const duration = new Date().getTime() - startTime;\n    addTestResult('Login (Negative Scenario)', 'Failed', duration, error.message);\n    throw error;\n}",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".sc-qZrbh\"}\n  (Session info: chrome=125.0.6422.142)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".sc-qZrbh\"}\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async Context.<anonymous> (tests\\unitTesting\\loginRest.js:83:29)",
+                "diff": null
+              },
+              "uuid": "7ad527a0-b396-43b8-9fd1-3dd89e737248",
+              "parentUUID": "01de7a14-abfb-454c-a2ca-6307fa94c62c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7ad527a0-b396-43b8-9fd1-3dd89e737248"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6594,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 90000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "Test_Report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "Report",
+        "reportFilename": "Test_Report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

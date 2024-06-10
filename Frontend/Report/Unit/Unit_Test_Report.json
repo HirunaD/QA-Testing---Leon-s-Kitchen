@@ -1,0 +1,1174 @@
+{
+  "stats": {
+    "suites": 14,
+    "tests": 14,
+    "passes": 6,
+    "pending": 0,
+    "failures": 8,
+    "start": "2024-06-10T07:45:17.477Z",
+    "end": "2024-06-10T07:46:52.485Z",
+    "duration": 95008,
+    "testsRegistered": 14,
+    "passPercent": 42.857142857142854,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "52f2e555-2437-451c-9a70-064f5eb8b776",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "aaa1808e-0fb6-4156-a732-620e07d3a403",
+          "title": "Add Items to Cart",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\AddtoCart.spec.js",
+          "file": "\\tests\\unitTesting\\AddtoCart.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Add Items to Cart\"",
+              "fullTitle": "Add Items to Cart \"before each\" hook in \"Add Items to Cart\"",
+              "timedOut": false,
+              "duration": 2278,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "23a2a41f-d091-42d7-8a34-b3a2add74298",
+              "parentUUID": "aaa1808e-0fb6-4156-a732-620e07d3a403",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Add Items to Cart\"",
+              "fullTitle": "Add Items to Cart \"after each\" hook in \"Add Items to Cart\"",
+              "timedOut": false,
+              "duration": 108,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "9a9dfe9e-e331-412d-bf20-41dc2f754406",
+              "parentUUID": "aaa1808e-0fb6-4156-a732-620e07d3a403",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Add to Cart",
+              "fullTitle": "Add Items to Cart Add to Cart",
+              "timedOut": false,
+              "duration": 6342,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000/restaurantdetailpagedesktop\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.css(\".gap-5:nth-child(4) > .bg-gray-50_02:nth-child(5) .h-\\\\[49px\\\\]\")).click()\nawait driver.findElement(By.css(\".common-pointer:nth-child(2) .h-\\\\[49px\\\\]\")).click()\nawait driver.findElement(By.css(\".focus\\\\3Ascale-300\")).click()",
+              "err": {},
+              "uuid": "6ec47769-1b6f-466b-bd63-aa6d9d81e992",
+              "parentUUID": "aaa1808e-0fb6-4156-a732-620e07d3a403",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6ec47769-1b6f-466b-bd63-aa6d9d81e992"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6342,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "719b16d8-8094-42c9-8a07-4213f9522f1f",
+          "title": "Login to Cart Tab",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\CartTab.spec.js",
+          "file": "\\tests\\unitTesting\\CartTab.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Login to Cart Tab\"",
+              "fullTitle": "Login to Cart Tab \"before each\" hook in \"Login to Cart Tab\"",
+              "timedOut": false,
+              "duration": 1587,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "23a01d42-512c-48f6-8bc6-10c1a289b050",
+              "parentUUID": "719b16d8-8094-42c9-8a07-4213f9522f1f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Login to Cart Tab\"",
+              "fullTitle": "Login to Cart Tab \"after each\" hook in \"Login to Cart Tab\"",
+              "timedOut": false,
+              "duration": 159,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "1e88c6db-6d76-4327-9fbd-9d6ab39edb69",
+              "parentUUID": "719b16d8-8094-42c9-8a07-4213f9522f1f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Cart Tab",
+              "fullTitle": "Login to Cart Tab Cart Tab",
+              "timedOut": false,
+              "duration": 6028,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000/restaurantdetailpagedesktop\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.css(\".text-black-900:nth-child(6)\")).click()",
+              "err": {},
+              "uuid": "544435a1-3688-4b2e-b18f-1f96e3e1563e",
+              "parentUUID": "719b16d8-8094-42c9-8a07-4213f9522f1f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "544435a1-3688-4b2e-b18f-1f96e3e1563e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6028,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "2a47809b-4fc6-4a93-b997-84763e6e05b8",
+          "title": "Increase the Quantity",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\CartTab.spec.js",
+          "file": "\\tests\\unitTesting\\CartTab.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Increase the Quantity\"",
+              "fullTitle": "Increase the Quantity \"before each\" hook in \"Increase the Quantity\"",
+              "timedOut": false,
+              "duration": 1579,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "31c45ec3-c0f7-4b31-8cfd-136bb6ee9b59",
+              "parentUUID": "2a47809b-4fc6-4a93-b997-84763e6e05b8",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Increase the Quantity\"",
+              "fullTitle": "Increase the Quantity \"after each\" hook in \"Increase the Quantity\"",
+              "timedOut": false,
+              "duration": 115,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "f91c2cfc-5f41-4a88-906d-4dc0ecb2e892",
+              "parentUUID": "2a47809b-4fc6-4a93-b997-84763e6e05b8",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Increase Qauntity",
+              "fullTitle": "Increase the Quantity Increase Qauntity",
+              "timedOut": false,
+              "duration": 4910,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000/orderingpage\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.css(\".bg-gray-50_02:nth-child(1) .arrow-button:nth-child(1) path\")).click()\nawait driver.findElement(By.css(\".bg-gray-50_02:nth-child(1) .arrow-button:nth-child(1) path\")).click()\nawait driver.findElement(By.css(\".bg-gray-50_02:nth-child(2) .arrow-button:nth-child(1) > .svg-inline--fa\")).click()\nawait driver.findElement(By.css(\".bg-gray-50_02:nth-child(2) .arrow-button:nth-child(1) > .svg-inline--fa\")).click()\nawait driver.findElement(By.css(\".bg-gray-50_02:nth-child(3) .arrow-button:nth-child(1) path\")).click()\nawait driver.findElement(By.css(\".bg-gray-50_02:nth-child(3) .arrow-button:nth-child(1) path\")).click()",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".bg-gray-50_02:nth-child(1) .arrow-button:nth-child(1) path\"}\n  (Session info: chrome=125.0.6422.142)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".bg-gray-50_02:nth-child(1) .arrow-button:nth-child(1) path\"}\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async toWireValue (node_modules\\selenium-webdriver\\lib\\webdriver.js:146:15)\n    at async C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\node_modules\\selenium-webdriver\\lib\\webdriver.js:192:16\n    at async forEachKey (node_modules\\selenium-webdriver\\lib\\webdriver.js:186:9)\n    at async convertKeys (node_modules\\selenium-webdriver\\lib\\webdriver.js:191:3)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:738:22)\n    at async Context.<anonymous> (tests\\unitTesting\\CartTab.spec.js:38:5)",
+                "diff": null
+              },
+              "uuid": "3fa0195a-5e95-4573-b9a6-f39ecd819108",
+              "parentUUID": "2a47809b-4fc6-4a93-b997-84763e6e05b8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3fa0195a-5e95-4573-b9a6-f39ecd819108"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4910,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "3044f33a-b13d-4aa9-9534-d86602888adb",
+          "title": "Decrease the Quantity",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\CartTab.spec.js",
+          "file": "\\tests\\unitTesting\\CartTab.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Decrease the Quantity\"",
+              "fullTitle": "Decrease the Quantity \"before each\" hook in \"Decrease the Quantity\"",
+              "timedOut": false,
+              "duration": 1371,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "72e21aff-674f-4d99-ae49-d177adedc13a",
+              "parentUUID": "3044f33a-b13d-4aa9-9534-d86602888adb",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Decrease the Quantity\"",
+              "fullTitle": "Decrease the Quantity \"after each\" hook in \"Decrease the Quantity\"",
+              "timedOut": false,
+              "duration": 213,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "1fa0129f-f436-4926-97af-cf3f47220f62",
+              "parentUUID": "3044f33a-b13d-4aa9-9534-d86602888adb",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Decreasing Quantity",
+              "fullTitle": "Decrease the Quantity Decreasing Quantity",
+              "timedOut": false,
+              "duration": 3283,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000/orderingpage\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.css(\".bg-gray-50_02:nth-child(1) .arrow-button:nth-child(1) > .svg-inline--fa\")).click()\nawait driver.findElement(By.css(\".bg-gray-50_02:nth-child(1) .arrow-button:nth-child(1) > .svg-inline--fa\")).click()\nawait driver.findElement(By.css(\".bg-gray-50_02:nth-child(1) .arrow-button:nth-child(3) path\")).click()\nawait driver.findElement(By.css(\".bg-gray-50_02:nth-child(3) .arrow-button:nth-child(1) > .svg-inline--fa\")).click()\nawait driver.findElement(By.css(\".bg-gray-50_02:nth-child(3) .arrow-button:nth-child(1) path\")).click()\nawait driver.findElement(By.css(\".bg-gray-50_02:nth-child(3) .arrow-button:nth-child(3) > .svg-inline--fa\")).click()",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".bg-gray-50_02:nth-child(1) .arrow-button:nth-child(1) > .svg-inline--fa\"}\n  (Session info: chrome=125.0.6422.142)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".bg-gray-50_02:nth-child(1) .arrow-button:nth-child(1) > .svg-inline--fa\"}\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async toWireValue (node_modules\\selenium-webdriver\\lib\\webdriver.js:146:15)\n    at async C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\node_modules\\selenium-webdriver\\lib\\webdriver.js:192:16\n    at async forEachKey (node_modules\\selenium-webdriver\\lib\\webdriver.js:186:9)\n    at async convertKeys (node_modules\\selenium-webdriver\\lib\\webdriver.js:191:3)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:738:22)\n    at async Context.<anonymous> (tests\\unitTesting\\CartTab.spec.js:62:5)",
+                "diff": null
+              },
+              "uuid": "81db32cd-90a9-4100-9dbe-09d224a44c2a",
+              "parentUUID": "3044f33a-b13d-4aa9-9534-d86602888adb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "81db32cd-90a9-4100-9dbe-09d224a44c2a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3283,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "726ea187-8e42-49da-b777-020a8276d9e6",
+          "title": "Delete Items",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\CartTab.spec.js",
+          "file": "\\tests\\unitTesting\\CartTab.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Delete Items\"",
+              "fullTitle": "Delete Items \"before each\" hook in \"Delete Items\"",
+              "timedOut": false,
+              "duration": 3341,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "a0ae1153-b4fa-45f7-9636-10f1535effa5",
+              "parentUUID": "726ea187-8e42-49da-b777-020a8276d9e6",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Delete Items\"",
+              "fullTitle": "Delete Items \"after each\" hook in \"Delete Items\"",
+              "timedOut": false,
+              "duration": 268,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "8ca3131d-0e64-4c68-b9b3-3c40e843a8b2",
+              "parentUUID": "726ea187-8e42-49da-b777-020a8276d9e6",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Delete Item",
+              "fullTitle": "Delete Items Delete Item",
+              "timedOut": false,
+              "duration": 3183,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000/orderingpage\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.css(\".bg-gray-50_02:nth-child(3) > .delete-button path\")).click()",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".bg-gray-50_02:nth-child(3) > .delete-button path\"}\n  (Session info: chrome=125.0.6422.142)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".bg-gray-50_02:nth-child(3) > .delete-button path\"}\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async toWireValue (node_modules\\selenium-webdriver\\lib\\webdriver.js:146:15)\n    at async C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\node_modules\\selenium-webdriver\\lib\\webdriver.js:192:16\n    at async forEachKey (node_modules\\selenium-webdriver\\lib\\webdriver.js:186:9)\n    at async convertKeys (node_modules\\selenium-webdriver\\lib\\webdriver.js:191:3)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:738:22)\n    at async Context.<anonymous> (tests\\unitTesting\\CartTab.spec.js:86:5)",
+                "diff": null
+              },
+              "uuid": "f317bb29-14aa-4192-bce4-04ddaf2ae46b",
+              "parentUUID": "726ea187-8e42-49da-b777-020a8276d9e6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f317bb29-14aa-4192-bce4-04ddaf2ae46b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3183,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "454549a8-e490-49bb-a4c9-b638cc8c2419",
+          "title": "Place the Order",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\CartTab.spec.js",
+          "file": "\\tests\\unitTesting\\CartTab.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Place the Order\"",
+              "fullTitle": "Place the Order \"before each\" hook in \"Place the Order\"",
+              "timedOut": false,
+              "duration": 1838,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "b15c76b3-6655-405f-8561-24aeb8f03ced",
+              "parentUUID": "454549a8-e490-49bb-a4c9-b638cc8c2419",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Place the Order\"",
+              "fullTitle": "Place the Order \"after each\" hook in \"Place the Order\"",
+              "timedOut": false,
+              "duration": 111,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "645b7544-7129-4afd-9423-dfc36d495908",
+              "parentUUID": "454549a8-e490-49bb-a4c9-b638cc8c2419",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Place Order",
+              "fullTitle": "Place the Order Place Order",
+              "timedOut": false,
+              "duration": 5547,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000/orderingpage\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nvars[\"windowHandles\"] = await driver.getAllWindowHandles()\nawait driver.findElement(By.css(\".bg-orange-600_cc:nth-child(2)\")).click()\nvars[\"win3500\"] = await waitForWindow(2000)\nvars[\"root\"] = await driver.getWindowHandle()\nawait driver.switchTo().window(vars[\"win3500\"])\nawait driver.switchTo().window(vars[\"root\"])",
+              "err": {
+                "message": "Error: New window did not appear before timeout",
+                "estack": "Error: New window did not appear before timeout\n    at waitForWindow (tests\\unitTesting\\CartTab.spec.js:109:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (tests\\unitTesting\\CartTab.spec.js:116:23)",
+                "diff": null
+              },
+              "uuid": "c1c428eb-3cb1-4e27-ab18-df5b45549e2d",
+              "parentUUID": "454549a8-e490-49bb-a4c9-b638cc8c2419",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c1c428eb-3cb1-4e27-ab18-df5b45549e2d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5547,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "c9a0cd81-4e3a-4edf-984b-34d777fd3965",
+          "title": "Login to Home Tab",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\HomeTab.spec.js",
+          "file": "\\tests\\unitTesting\\HomeTab.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Login to Home Tab\"",
+              "fullTitle": "Login to Home Tab \"before each\" hook in \"Login to Home Tab\"",
+              "timedOut": false,
+              "duration": 1639,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "c13e06ec-e4f1-4f88-977e-525031ccdaf1",
+              "parentUUID": "c9a0cd81-4e3a-4edf-984b-34d777fd3965",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Login to Home Tab\"",
+              "fullTitle": "Login to Home Tab \"after each\" hook in \"Login to Home Tab\"",
+              "timedOut": false,
+              "duration": 170,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "5c6640e0-ea19-416b-b94f-9ec77b927357",
+              "parentUUID": "c9a0cd81-4e3a-4edf-984b-34d777fd3965",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Home Tab",
+              "fullTitle": "Login to Home Tab Home Tab",
+              "timedOut": false,
+              "duration": 3329,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000/orderingpage\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.css(\".text-white\")).click()",
+              "err": {},
+              "uuid": "d125ac80-e925-4560-97d6-384f0d96adb2",
+              "parentUUID": "c9a0cd81-4e3a-4edf-984b-34d777fd3965",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d125ac80-e925-4560-97d6-384f0d96adb2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3329,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "84116358-ce38-469c-950d-a6a45588aca0",
+          "title": "Login (Positive Scenario)",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\Login.spec.js",
+          "file": "\\tests\\unitTesting\\Login.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Login (Positive Scenario)\"",
+              "fullTitle": "Login (Positive Scenario) \"before each\" hook in \"Login (Positive Scenario)\"",
+              "timedOut": false,
+              "duration": 1516,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "7d50a1fe-20fc-4428-8e03-174aa36e17cd",
+              "parentUUID": "84116358-ce38-469c-950d-a6a45588aca0",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Login (Positive Scenario)\"",
+              "fullTitle": "Login (Positive Scenario) \"after each\" hook in \"Login (Positive Scenario)\"",
+              "timedOut": false,
+              "duration": 118,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "e481925e-4cfc-419f-b323-d669da7e1017",
+              "parentUUID": "84116358-ce38-469c-950d-a6a45588aca0",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Login (Positive Scenario)",
+              "fullTitle": "Login (Positive Scenario) Login (Positive Scenario)",
+              "timedOut": false,
+              "duration": 4292,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000/loginorreg\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.linkText(\"Login\")).click()\nawait driver.findElement(By.name(\"email\")).click()\nawait driver.findElement(By.name(\"email\")).sendKeys(\"desilvahiruna72@gmail.com\")\nawait driver.findElement(By.name(\"password\")).click()\nawait driver.findElement(By.name(\"password\")).sendKeys(\"Rsm@1234\")\nawait driver.findElement(By.css(\".sc-qZrbh\")).click()",
+              "err": {},
+              "uuid": "c94840ae-4c0a-4f06-874f-773567d7d37f",
+              "parentUUID": "84116358-ce38-469c-950d-a6a45588aca0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c94840ae-4c0a-4f06-874f-773567d7d37f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4292,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "510deb2a-fe37-4026-b83b-2fce6e26ccb7",
+          "title": "Login (Negative Scenario)",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\Login.spec.js",
+          "file": "\\tests\\unitTesting\\Login.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Login (Negative Scenario)\"",
+              "fullTitle": "Login (Negative Scenario) \"before each\" hook in \"Login (Negative Scenario)\"",
+              "timedOut": false,
+              "duration": 4253,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "9ea544b8-c7fb-4263-baf9-69de187fd7ec",
+              "parentUUID": "510deb2a-fe37-4026-b83b-2fce6e26ccb7",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Login (Negative Scenario)\"",
+              "fullTitle": "Login (Negative Scenario) \"after each\" hook in \"Login (Negative Scenario)\"",
+              "timedOut": false,
+              "duration": 167,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "f9938bd6-8758-4f50-a350-1bd094dead2c",
+              "parentUUID": "510deb2a-fe37-4026-b83b-2fce6e26ccb7",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Login (Negative Scenario)",
+              "fullTitle": "Login (Negative Scenario) Login (Negative Scenario)",
+              "timedOut": false,
+              "duration": 4455,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000/loginorreg\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.linkText(\"Login\")).click()\nawait driver.findElement(By.name(\"email\")).click()\nawait driver.findElement(By.name(\"email\")).sendKeys(\"desilvahiruna72@gmail.com\")\nawait driver.findElement(By.name(\"password\")).click()\nawait driver.findElement(By.name(\"password\")).sendKeys(\"rsm@1234\")\nawait driver.findElement(By.css(\".sc-qZrbh\")).click()\n{\n  const element = await driver.findElement(By.css(\".sc-qZrbh\"))\n  await driver.actions({ bridge: true }).moveToElement(element).perform()\n}",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".sc-qZrbh\"}\n  (Session info: chrome=125.0.6422.142)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".sc-qZrbh\"}\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async Context.<anonymous> (tests\\unitTesting\\Login.spec.js:50:23)",
+                "diff": null
+              },
+              "uuid": "c3a65a80-118f-42cf-9e67-9ea1816d2668",
+              "parentUUID": "510deb2a-fe37-4026-b83b-2fce6e26ccb7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c3a65a80-118f-42cf-9e67-9ea1816d2668"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4455,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 90000
+        },
+        {
+          "uuid": "115c0cce-cc5d-4fa7-80c7-9fe072132bac",
+          "title": "Logout",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\Logout.spec.js",
+          "file": "\\tests\\unitTesting\\Logout.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Logout\"",
+              "fullTitle": "Logout \"before each\" hook in \"Logout\"",
+              "timedOut": false,
+              "duration": 1472,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "1562251d-1a59-4aee-9af2-f790b9ea8b29",
+              "parentUUID": "115c0cce-cc5d-4fa7-80c7-9fe072132bac",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Logout\"",
+              "fullTitle": "Logout \"after each\" hook in \"Logout\"",
+              "timedOut": false,
+              "duration": 370,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "bee97599-2915-4536-9a63-77e5da646e7e",
+              "parentUUID": "115c0cce-cc5d-4fa7-80c7-9fe072132bac",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Logout",
+              "fullTitle": "Logout Logout",
+              "timedOut": false,
+              "duration": 3633,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000/restaurantdetailpagedesktop\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.css(\".h-\\\\[27px\\\\]\")).click()",
+              "err": {},
+              "uuid": "ce94a553-2f6a-46c6-bb77-468296ae10d8",
+              "parentUUID": "115c0cce-cc5d-4fa7-80c7-9fe072132bac",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ce94a553-2f6a-46c6-bb77-468296ae10d8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3633,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "b76521eb-bae7-4c3d-a29b-036ef79dc220",
+          "title": "PasswordReset",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\PasswordReset.spec.js",
+          "file": "\\tests\\unitTesting\\PasswordReset.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"PasswordReset\"",
+              "fullTitle": "PasswordReset \"before each\" hook in \"PasswordReset\"",
+              "timedOut": false,
+              "duration": 1629,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "82c554b5-e011-4610-98a2-da636ae12f7d",
+              "parentUUID": "b76521eb-bae7-4c3d-a29b-036ef79dc220",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"PasswordReset\"",
+              "fullTitle": "PasswordReset \"after each\" hook in \"PasswordReset\"",
+              "timedOut": false,
+              "duration": 117,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "da36e84e-8a9b-4c37-9960-bcc31df5b6cd",
+              "parentUUID": "b76521eb-bae7-4c3d-a29b-036ef79dc220",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "PasswordReset",
+              "fullTitle": "PasswordReset PasswordReset",
+              "timedOut": false,
+              "duration": 3422,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000/loginorreg\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.linkText(\"Signup\")).click()\n{\n  const element = await driver.findElement(By.linkText(\"Signup\"))\n  await driver.actions({ bridge: true }).moveToElement(element).perform()\n}\nawait driver.findElement(By.name(\"name\")).click()\nawait driver.findElement(By.name(\"name\")).sendKeys(\"Hiruna\")\nawait driver.findElement(By.name(\"email\")).click()\nawait driver.findElement(By.name(\"email\")).sendKeys(\"desilvahiruna72@gmail.com\")\nawait driver.findElement(By.name(\"mobileNumber\")).click()\nawait driver.findElement(By.name(\"mobileNumber\")).sendKeys(\"0764231391\")\nawait driver.findElement(By.name(\"password\")).click()\nawait driver.findElement(By.name(\"password\")).sendKeys(\"Rsm@1234\")\nawait driver.findElement(By.name(\"repeatPassword\")).sendKeys(\"Rsm@1234\")\nawait driver.findElement(By.css(\".sc-qZrbh\")).click()\n{\n  const element = await driver.findElement(By.css(\".sc-qZrbh\"))\n  await driver.actions({ bridge: true }).moveToElement(element).perform()\n}\nawait driver.findElement(By.css(\".sc-qZrbh\")).click()\nawait driver.findElement(By.linkText(\"Login\")).click()\nawait driver.findElement(By.name(\"email\")).click()\nawait driver.findElement(By.name(\"email\")).sendKeys(\"desilvahiruna72@gmail.com\")\nawait driver.findElement(By.name(\"password\")).click()\nawait driver.findElement(By.name(\"password\")).sendKeys(\"rsm@1234\")\nawait driver.findElement(By.name(\"password\")).sendKeys(Key.ENTER)\nawait driver.close()\nawait driver.findElement(By.linkText(\"Login\")).click()\nawait driver.findElement(By.name(\"email\")).click()\nawait driver.findElement(By.name(\"email\")).sendKeys(\"desilvahiruna72@gmail.com\")\nawait driver.findElement(By.name(\"password\")).click()\nawait driver.findElement(By.name(\"password\")).sendKeys(\"rsm@1234\")\nawait driver.findElement(By.name(\"password\")).sendKeys(Key.ENTER)\nawait driver.findElement(By.css(\".sc-qZrbh\")).click()\nawait driver.findElement(By.css(\".hDpctm > svg\")).click()\nawait driver.findElement(By.linkText(\"Login\")).click()\nawait driver.findElement(By.linkText(\"Reset it\")).click()\nawait driver.findElement(By.name(\"email\")).click()\nawait driver.findElement(By.name(\"email\")).sendKeys(\"hirunadesilva0422@gmail.com\")\nawait driver.findElement(By.css(\".sc-qZrbh\")).click()",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"Signup\"}\n  (Session info: chrome=125.0.6422.142)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"Signup\"}\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async Context.<anonymous> (tests\\unitTesting\\PasswordReset.spec.js:21:23)",
+                "diff": null
+              },
+              "uuid": "fc2f3eb6-577f-4e85-a1c8-896aacfbfb24",
+              "parentUUID": "b76521eb-bae7-4c3d-a29b-036ef79dc220",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "fc2f3eb6-577f-4e85-a1c8-896aacfbfb24"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3422,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "6cb8107c-0518-4281-b783-e247e94bdc13",
+          "title": "Calculate Route",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\SelectLocation.spec.js",
+          "file": "\\tests\\unitTesting\\SelectLocation.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Calculate Route\"",
+              "fullTitle": "Calculate Route \"before each\" hook in \"Calculate Route\"",
+              "timedOut": false,
+              "duration": 1765,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "14f2821d-3cc7-4de2-85ce-b308602f4fbd",
+              "parentUUID": "6cb8107c-0518-4281-b783-e247e94bdc13",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Calculate Route\"",
+              "fullTitle": "Calculate Route \"after each\" hook in \"Calculate Route\"",
+              "timedOut": false,
+              "duration": 120,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "b7e7c4b1-5ac0-451b-8e9d-2949ec203b88",
+              "parentUUID": "6cb8107c-0518-4281-b783-e247e94bdc13",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Calculating Route",
+              "fullTitle": "Calculate Route Calculating Route",
+              "timedOut": false,
+              "duration": 5323,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000/map\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.css(\".pac-target-input\")).click()\nawait driver.findElement(By.css(\".pac-target-input\")).sendKeys(\"Matara\")\n{\n  const element = await driver.findElement(By.css(\"div:nth-child(2) > .bg-orange-600_cc:nth-child(2)\"))\n  await driver.actions({ bridge: true }).moveToElement(element).release().perform()\n}",
+              "err": {
+                "message": "TypeError: driver.actions(...).moveToElement is not a function",
+                "estack": "TypeError: driver.actions(...).moveToElement is not a function\n    at Context.<anonymous> (tests\\unitTesting\\SelectLocation.spec.js:23:46)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": null
+              },
+              "uuid": "a1a14d65-2064-44e0-b787-f7411a9db1eb",
+              "parentUUID": "6cb8107c-0518-4281-b783-e247e94bdc13",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a1a14d65-2064-44e0-b787-f7411a9db1eb"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5323,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "29cb455c-9ce9-49b2-aadb-489a3bd6a885",
+          "title": "Signup (Positive Scenario)",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\Signup.spec.js",
+          "file": "\\tests\\unitTesting\\Signup.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Signup (Positive Scenario)\"",
+              "fullTitle": "Signup (Positive Scenario) \"before each\" hook in \"Signup (Positive Scenario)\"",
+              "timedOut": false,
+              "duration": 1514,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "8c78947f-7a2c-4d9e-be4f-cfffa71420db",
+              "parentUUID": "29cb455c-9ce9-49b2-aadb-489a3bd6a885",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Signup (Positive Scenario)\"",
+              "fullTitle": "Signup (Positive Scenario) \"after each\" hook in \"Signup (Positive Scenario)\"",
+              "timedOut": false,
+              "duration": 99,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "d643824c-d34a-414d-8c3a-d84102051136",
+              "parentUUID": "29cb455c-9ce9-49b2-aadb-489a3bd6a885",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Signup (Positive Scenario)",
+              "fullTitle": "Signup (Positive Scenario) Signup (Positive Scenario)",
+              "timedOut": false,
+              "duration": 4681,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000/\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.css(\".hover-effect:nth-child(2)\")).click()\nawait driver.findElement(By.linkText(\"Signup\")).click()\nawait driver.findElement(By.name(\"name\")).click()\nawait driver.findElement(By.name(\"name\")).sendKeys(\"Virat\")\nawait driver.findElement(By.name(\"name\")).click()\nawait driver.findElement(By.name(\"name\")).sendKeys(\"Virat Kohli\")\nawait driver.findElement(By.name(\"email\")).sendKeys(\"virat18@gmail.com\")\nawait driver.findElement(By.name(\"mobileNumber\")).sendKeys(\"76433232\")\nawait driver.findElement(By.name(\"password\")).click()\nawait driver.findElement(By.name(\"password\")).sendKeys(\"virat18\")\nawait driver.findElement(By.name(\"repeatPassword\")).sendKeys(\"virat18\")\nawait driver.findElement(By.css(\".sc-qZrbh\")).click()",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".hover-effect:nth-child(2)\"}\n  (Session info: chrome=125.0.6422.142)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".hover-effect:nth-child(2)\"}\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async toWireValue (node_modules\\selenium-webdriver\\lib\\webdriver.js:146:15)\n    at async C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\node_modules\\selenium-webdriver\\lib\\webdriver.js:192:16\n    at async forEachKey (node_modules\\selenium-webdriver\\lib\\webdriver.js:186:9)\n    at async convertKeys (node_modules\\selenium-webdriver\\lib\\webdriver.js:191:3)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:738:22)\n    at async Context.<anonymous> (tests\\unitTesting\\Signup.spec.js:19:5)",
+                "diff": null
+              },
+              "uuid": "1d968e7c-cd4b-44b3-b4dc-cb43fc0e78bd",
+              "parentUUID": "29cb455c-9ce9-49b2-aadb-489a3bd6a885",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1d968e7c-cd4b-44b3-b4dc-cb43fc0e78bd"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4681,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 90000
+        },
+        {
+          "uuid": "c98fa831-2737-4e47-b9a2-589ba6dbe539",
+          "title": "Signup (Negative Scenario)",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\unitTesting\\Signup.spec.js",
+          "file": "\\tests\\unitTesting\\Signup.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Signup (Negative Scenario)\"",
+              "fullTitle": "Signup (Negative Scenario) \"before each\" hook in \"Signup (Negative Scenario)\"",
+              "timedOut": false,
+              "duration": 1442,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "4f0cc6da-b3a3-43f3-9464-10bb3206cf40",
+              "parentUUID": "c98fa831-2737-4e47-b9a2-589ba6dbe539",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Signup (Negative Scenario)\"",
+              "fullTitle": "Signup (Negative Scenario) \"after each\" hook in \"Signup (Negative Scenario)\"",
+              "timedOut": false,
+              "duration": 68,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "78966573-5697-49b9-aa3c-3d940373358e",
+              "parentUUID": "c98fa831-2737-4e47-b9a2-589ba6dbe539",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Signup (Negative Scenario)",
+              "fullTitle": "Signup (Negative Scenario) Signup (Negative Scenario)",
+              "timedOut": false,
+              "duration": 7113,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000/signup\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.name(\"name\")).click()\nawait driver.findElement(By.name(\"name\")).sendKeys(\"Dhoni M\")\nawait driver.findElement(By.name(\"email\")).sendKeys(\"dhoni.gmail.com\")\nawait driver.findElement(By.name(\"mobileNumber\")).sendKeys(\"+941234567\")\nawait driver.findElement(By.name(\"password\")).sendKeys(\"hiruna#\")\nawait driver.findElement(By.name(\"repeatPassword\")).sendKeys(\"hiruna#\")\nawait driver.findElement(By.name(\"password\")).click()\nawait driver.findElement(By.name(\"password\")).sendKeys(\"hiruna#123\")\nawait driver.findElement(By.name(\"repeatPassword\")).click()\nawait driver.findElement(By.name(\"repeatPassword\")).sendKeys(\"hiruna#123\")\nawait driver.findElement(By.css(\".sc-qZrbh\")).click()",
+              "err": {},
+              "uuid": "0ab451c9-2a06-497f-b6ca-250ff751191a",
+              "parentUUID": "c98fa831-2737-4e47-b9a2-589ba6dbe539",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0ab451c9-2a06-497f-b6ca-250ff751191a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7113,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "Unit_Test_Report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "Report/Unit",
+        "reportFilename": "Unit_Test_Report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

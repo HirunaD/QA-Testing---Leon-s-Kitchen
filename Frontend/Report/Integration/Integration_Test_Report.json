@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-06-10T07:53:29.008Z",
+    "end": "2024-06-10T07:53:40.055Z",
+    "duration": 11047,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d4e6cb47-5e0c-4bc3-b266-546088bc02e0",
+      "title": "",
+      "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\integratedTesting\\addItemstoCartandPlaceOrder.spec.js",
+      "file": "\\tests\\integratedTesting\\addItemstoCartandPlaceOrder.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0f6ad282-e199-4cd9-83ed-5465418b2642",
+          "title": "Add Items to Cart and Place Order",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Leon-s-Kitchen-Galle-dev\\Frontend\\tests\\integratedTesting\\addItemstoCartandPlaceOrder.spec.js",
+          "file": "\\tests\\integratedTesting\\addItemstoCartandPlaceOrder.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Add Items to Cart and Place Order\"",
+              "fullTitle": "Add Items to Cart and Place Order \"before each\" hook in \"Add Items to Cart and Place Order\"",
+              "timedOut": false,
+              "duration": 1634,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "c4a4831d-41f5-467f-a2c4-b4d5bc6762ad",
+              "parentUUID": "0f6ad282-e199-4cd9-83ed-5465418b2642",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Add Items to Cart and Place Order\"",
+              "fullTitle": "Add Items to Cart and Place Order \"after each\" hook in \"Add Items to Cart and Place Order\"",
+              "timedOut": false,
+              "duration": 118,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "b79465ec-f7ee-477a-a003-20a147e8bb85",
+              "parentUUID": "0f6ad282-e199-4cd9-83ed-5465418b2642",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Add Items to Cart and Place Order",
+              "fullTitle": "Add Items to Cart and Place Order Add Items to Cart and Place Order",
+              "timedOut": false,
+              "duration": 9283,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000/restaurantdetailpagedesktop\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.css(\".focus\\\\3Ascale-300\")).click()\nawait driver.findElement(By.css(\".gap-5:nth-child(4) > .bg-gray-50_02:nth-child(5) .h-\\\\[49px\\\\]\")).click()\nawait driver.findElement(By.css(\".h-6\")).click()\nvars[\"windowHandles\"] = await driver.getAllWindowHandles()\nawait driver.findElement(By.css(\".bg-orange-600_cc:nth-child(2)\")).click()\nvars[\"win659\"] = await waitForWindow(2000)\nawait driver.switchTo().window(vars[\"win659\"])",
+              "err": {
+                "message": "Error: New window did not appear before timeout",
+                "estack": "Error: New window did not appear before timeout\n    at waitForWindow (tests\\integratedTesting\\addItemstoCartandPlaceOrder.spec.js:23:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (tests\\integratedTesting\\addItemstoCartandPlaceOrder.spec.js:33:22)",
+                "diff": null
+              },
+              "uuid": "db9a08eb-85a2-4863-b7c8-404790386cec",
+              "parentUUID": "0f6ad282-e199-4cd9-83ed-5465418b2642",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "db9a08eb-85a2-4863-b7c8-404790386cec"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9283,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "Integration_Test_Report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "Report/Integration",
+        "reportFilename": "Integration_Test_Report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
