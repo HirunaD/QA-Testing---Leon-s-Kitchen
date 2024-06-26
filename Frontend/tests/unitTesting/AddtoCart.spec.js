@@ -1,6 +1,8 @@
 // Add items to cart
 const { Builder, By, Key, until } = require('selenium-webdriver')
 const assert = require('assert')
+const xlsx = require('xlsx')
+const fs = require('fs')
 
 describe('Add Items to Cart', function() {
   this.timeout(30000)
@@ -13,6 +15,7 @@ describe('Add Items to Cart', function() {
   afterEach(async function() {
     await driver.quit();
   })
+  
   it('Add to Cart', async function() {
     await driver.get("http://localhost:3000/restaurantdetailpagedesktop")
     await driver.manage().window().setRect({ width: 1552, height: 832 })

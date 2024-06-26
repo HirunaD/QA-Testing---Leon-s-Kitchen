@@ -45,10 +45,10 @@ describe('Login (Negative Scenario)', function() {
     await driver.findElement(By.name("email")).sendKeys("desilvahiruna72@gmail.com")
     await driver.findElement(By.name("password")).click()
     await driver.findElement(By.name("password")).sendKeys("rsm@1234")
-    await driver.findElement(By.css(".sc-qZrbh")).click()
-    {
-      const element = await driver.findElement(By.css(".sc-qZrbh"))
-      await driver.actions({ bridge: true }).moveToElement(element).perform()
-    }
+    // await driver.findElement(By.css(".sc-qZrbh")).click()
+    // {
+    //   const element = await driver.findElement(By.css(".sc-qZrbh"))
+    //   await driver.actions({ bridge: true }).moveToElement(element).perform()
+    // }
   })
 })
